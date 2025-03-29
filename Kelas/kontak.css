@@ -1,0 +1,107 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #00B5F1, #4A00E0);
+    --accent-gradient: linear-gradient(135deg, #FFD700, #FF416C);
+    --font: 'Poppins', sans-serif;
+    --bg-dark: #0f172a;
+    --text-light: #f1f5f9;
+    --card-bg: #1e293b;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font);
+    background: var(--bg-dark);
+    color: var(--text-light);
+    padding: 2rem;
+  }
+
+  header {
+    background: var(--primary-gradient);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    background: var(--primary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .kontak-container {
+    max-width: 700px;
+    margin: auto;
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  }
+
+  .kontak-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .kontak-container input,
+  .kontak-container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: #334155;
+    color: white;
+  }
+
+  .kontak-container button {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .kontak-container button:hover {
+    opacity: 0.85;
+  }
+
+  .sosial {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .sosial a {
+    margin: 0 1rem;
+    color: var(--text-light);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .sosial a:hover {
+    color: #00B5F1;
+  }

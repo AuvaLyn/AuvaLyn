@@ -1,0 +1,113 @@
+:root {
+    --primary-gradient: linear-gradient(135deg, #00B5F1, #4A00E0);
+    --accent-gradient: linear-gradient(135deg, #FFD700, #FF416C);
+    --font: 'Poppins', sans-serif;
+    --bg-dark: #0f172a;
+    --text-light: #f1f5f9;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font);
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--primary-gradient);
+  }
+
+  header .logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    margin-left: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .hero {
+    padding: 5rem 2rem;
+    text-align: center;
+    background: var(--primary-gradient);
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero button {
+    background: var(--accent-gradient);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .hero button:hover {
+    transform: scale(1.05);
+  }
+
+  section.about {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #1e293b;
+  }
+
+  section.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .links a {
+    background: var(--primary-gradient);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .links a:hover {
+    background: var(--accent-gradient);
+  }
+
+  footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #0f172a;
+    font-size: 0.9rem;
+  }
